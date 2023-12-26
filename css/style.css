@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+:root {
+  --primary_color:hsl(262, 52%, 47%);
+  --light_primary_color:hsl(262, 52%, 65%);
+  --extra_light_primary_color:hsl(262, 52%, 90%);
+  --light_color:#fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  background: rgba(103, 58, 183, 0.1019607843);
+}
+body::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #9d81d0;
+  height: 50vh;
+  width: 100%;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 70rem;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .main_wrapper {
+  max-width: 30rem;
+  width: 100%;
+  padding: 2rem;
+}
+.container .main_wrapper .header {
+  margin-bottom: 2rem;
+}
+.container .main_wrapper .header h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+}
+.container .main_wrapper .header .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 3px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.container .main_wrapper .header .row #input-box {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+}
+.container .main_wrapper .header .row button {
+  border: none;
+  outline: none;
+  padding: 16px 32px;
+  background-color: #b59cdf;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .main_wrapper .main {
+  height: 100%;
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  background-color: #f2eaff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(103, 58, 183, 0.4196078431);
+}
+.container .main_wrapper .main ul {
+  min-height: calc(100vh - 100px);
+  border: 1px dashed #673ab7;
+  padding: 40px;
+  background: rgba(103, 58, 183, 0.0392156863);
+}
+.container .main_wrapper .main ul:empty {
+  background: url("https://pt-halcom.com/page/assets/images/project-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container .main_wrapper .main ul li {
+  position: relative;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px dashed #2a184a;
+  background: rgba(103, 58, 183, 0.4196078431);
+  margin-bottom: 12px;
+}
+.container .main_wrapper .main ul li.checked {
+  text-decoration: line-through;
+  background-color: #4CAF50;
+  opacity: 0.5;
+}
+.container .main_wrapper .main ul li.checked .icon i.bxs-check-circle {
+  display: block;
+  color: #673ab7;
+}
+.container .main_wrapper .main ul li.checked .icon .bx-circle {
+  display: none;
+}
+.container .main_wrapper .main ul li .icon {
+  position: absolute;
+  left: 15px;
+}
+.container .main_wrapper .main ul li .icon i {
+  font-size: 22px;
+}
+.container .main_wrapper .main ul li .icon i.bxs-check-circle {
+  display: none;
+}
+.container .main_wrapper .main ul li .btn_delete {
+  color: red;
+}
+.container .main_wrapper .main ul li .btn_delete i {
+  font-size: 22px;
+}/*# sourceMappingURL=style.css.map */
